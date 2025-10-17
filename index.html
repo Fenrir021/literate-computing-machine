@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Teorias Administrativas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <button onclick="showPage('home')">🏠 INÍCIO</button>
+    <button onclick="showPage('teorias')">📚 TEORIAS</button>
+    <button onclick="showPage('canva')">🎨 CANVA</button>
+    <button onclick="showPage('quiz')">🧠 QUIZ</button>
+    <button onclick="showPage('final')">✅ FINAL</button>
+  </nav>
+
+  <section id="home" class="page">
+    <h1>Teorias Administrativas</h1>
+    <p>Explore os principais modelos que moldaram a gestão moderna. Aprenda de forma interativa com vídeos, quizzes e apresentações visuais.</p>
+   <img src="https://guarapuava.camporeal.edu.br/content/uploads/2017/01/IMG_7591-e1533344659579.jpg
+  </section>" alt="teoria administrativas", width="660"
+  
+  </section>
+
+  <section id="teorias" class="page" hidden>
+    <h2>Principais Teorias</h2>
+    <ul>
+      <li><strong>Teotias Científica:</strong> (Introdução) </li>
+      <li><strong> Características da Teoria Científica </strong> </li>
+      <li><strong> Teoria Clássica da Administração </strong> </li>
+      <li><strong> Características da Teoria Clássica:</strong> </li>
+      <li><strong>Comparação entre Eficiência e Eficácia</strong></li>
+      <li><strong>Relação entre as duas teorias e aplicação atual</strong></li>
+    </ul>
+     
+    
+  <section id = "teoria" class="subsection">
+    <div class="teorias-cientificas">
+      
+      <h2> Teorias Cientificas</h2>
+      <p>   As teorias científicas da administração, com destaque para a Administração Científica formulada por Frederick Winslow Taylor, representam um marco na evolução do pensamento organizacional. Fundamentadas na racionalização dos processos produtivos, essas abordagens propõem uma aplicação sistemática e metódica dos princípios administrativos, com o objetivo de maximizar a eficiência e a produtividade nas organizações.
+     <br> A Administração Científica introduz uma visão inovadora ao enfatizar o estudo detalhado das tarefas, a padronização dos métodos de trabalho e a especialização das funções. Por meio da análise científica dos tempos e movimentos, Taylor estabeleceu fundamentos que permitiram maior previsibilidade nas operações, redução de desperdícios e aprimoramento do desempenho individual e coletivo. <br> Essa perspectiva transformadora transcende os limites da indústria, encontrando aplicabilidade em diversos setores, como serviços, logística, saúde e educação. Ao promover uma gestão orientada por dados e evidências, as teorias científicas contribuem para decisões mais assertivas e para o desenvolvimento de ambientes organizacionais mais estruturados e eficazes.
+    Em síntese, a Administração Científica não apenas revolucionou os paradigmas da gestão no início do século XX, como também permanece relevante na era contemporânea, servindo de alicerce para práticas administrativas modernas que valorizam a excelência operacional e a melhoria contínua.
+      </p></div> 
+      
+      <br><iframe width="744" height="427" src="https://www.youtube.com/embed/Yva9C805jg0" title="Teoria da ADMINISTRAÇÃO CIENTÍFICA | TAYLORISMO | Frederick TAYLOR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+   
+  </section>
+
+  <section id="canva" class="page" hidden>
+    <h2>Apresentação Interativa</h2>
+    <p>Veja um resumo visual das teorias administrativas:</p>
+    <iframe src="https://www.canva.com/design/your-canva-link/embed" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="quiz" class="page" hidden>
+    <h2>Quiz Interativo</h2>
+
+    <!-- Pergunta 1 -->
+    <div class="quiz-block" id="quiz1">
+      <p><strong>1. Quem é considerado o pai da Administração Científica?</strong></p>
+      <form>
+        <input type="radio" name="q1" value="a"> Henri Fayol<br>
+        <input type="radio" name="q1" value="b"> A.E. Brennann<br>
+        <input type="radio" name="q1" value="c"> Frederick Taylor<br>
+        <button onclick="checkAnswer(event, 'q1', 'c', 'quiz2')">Enviar</button>
+      </form>
+      <p id="result-q1"></p>
+    </div>
+
+    <!-- Pergunta 2 -->
+    <div class="quiz-block" id="quiz2" style="display:none;">
+      <p><strong>2. Qual teoria valoriza o fator humano?</strong></p>
+      <form>
+        <input type="radio" name="q2" value="a"> Teoria Científica<br>
+        <input type="radio" name="q2" value="b"> Teoria das Relações Humanas<br>
+        <input type="radio" name="q2" value="c"> Teoria Burocrática<br>
+        <button onclick="checkAnswer(event, 'q2', 'b', 'quiz3')">Enviar</button>
+      </form>
+      <p id="result-q2"></p>
+    </div>
+
+    <!-- Pergunta 3 -->
+    <div class="quiz-block" id="quiz3" style="display:none;">
+      <p><strong>3. Qual teoria propõe que a administração depende do contexto?</strong></p>
+      <form>
+        <input type="radio" name="q3" value="a"> Teoria Clássica<br>
+        <input type="radio" name="q3" value="b"> Teoria Contingencial<br>
+        <input type="radio" name="q3" value="c"> Teoria dos Sistemas<br>
+        <button onclick="checkAnswer(event, 'q3', 'b', 'quiz4')">Enviar</button>
+      </form>
+      <p id="result-q3"></p>
+    </div>
+
+    <!-- Pergunta 4 -->
+    <div class="quiz-block" id="quiz4" style="display:none;">
+      <p><strong>4. Qual teoria vê a organização como um sistema interdependente?</strong></p>
+      <form>
+        <input type="radio" name="q4" value="a"> Teoria Científica<br>
+        <input type="radio" name="q4" value="b"> Teoria Burocrática<br>
+        <input type="radio" name="q4" value="c"> Teoria dos Sistemas<br>
+        <button onclick="checkAnswer(event, 'q4', 'c', null)">Enviar</button>
+      </form>
+      <p id="result-q4"></p>
+    </div>
+  </section>
+
+  <section id="final" class="page" hidden>
+    <h2>Conclusão</h2>
+    <p>Parabéns por completar o quiz! Você está pronto para aplicar as Teorias Administrativas com confiança.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
